@@ -1,5 +1,3 @@
 
-return +{
-    TestValue => 2,
-};
+return +{};
 

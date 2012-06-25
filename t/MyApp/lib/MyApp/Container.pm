@@ -7,4 +7,3 @@ use parent 'Pickles::Container';
 1;
 
 __END__
-

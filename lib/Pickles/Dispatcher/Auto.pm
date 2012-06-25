@@ -7,7 +7,7 @@ use Module::Pluggable::Object;
 use Pickles::Context;
 use String::CamelCase qw/camelize decamelize/;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub match {
     my $self = shift;
@@ -100,6 +100,7 @@ Pickles::Dispatcher::Auto - Pickles dispatcher without routes.pl
 
   package MyApp::Dispatcher;
   use strict;
+  use warnings;
   use parent qw/Pickles::Dispatcher::Auto/;
 
 =head1 DESCRIPTION

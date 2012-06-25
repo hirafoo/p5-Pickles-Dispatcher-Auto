@@ -1,6 +1,6 @@
 package MyApp::Dispatcher;
 use strict;
-use base qw(Pickles::Dispatcher::Auto);
+use parent qw(Pickles::Dispatcher::Auto);
 
 1;
 

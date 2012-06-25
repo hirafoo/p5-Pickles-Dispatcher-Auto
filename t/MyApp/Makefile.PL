@@ -4,9 +4,11 @@ all_from 'lib/MyApp.pm';
 
 # requires '';
 
-tests 't/*.t';
+requires 'Pickles' => 0.10;
 
-build_requires 'Test::More';
-use_test_base;
+tests 't/*.t';
+author_tests 'xt';
+
+test_requires 'Test::More';
 auto_include;
 WriteAll;

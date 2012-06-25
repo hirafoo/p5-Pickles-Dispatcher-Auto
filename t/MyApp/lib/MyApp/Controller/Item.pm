@@ -2,13 +2,9 @@ package MyApp::Controller::Item;
 use strict;
 use warnings;
 use parent 'Pickles::Controller';
+use Data::Dumper;sub p {warn Dumper \@_;my @c = caller;print STDERR "  at $c[1]:$c[2]\n\n"}
 
-sub view {
-    my( $self, $c ) = @_;
-    $c->stash->{'VIEW_TEMPLATE'} = 'item/view.html';
-    my $args = $c->args;
-    $c->stash->{id} = $args->{id};
-}
+sub view {}
 
 1;
 
